@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     padding: 0;
     margin: 0;    
@@ -57,7 +61,7 @@ nav ul li a:hover {
 /* Secciones */
 
 #secciones {
-    width: 80%;
+    width: 88%;
     padding-top: 10px;
     padding-bottom: 22px;
     margin: auto;
@@ -133,6 +137,7 @@ footer {
     background: linear-gradient(to bottom, #2a7886, #79bac1);    
     margin: auto;
     padding: 5px;
+    margin-top: 40px;
     color: #f1f3f4;
 }
 
@@ -182,13 +187,13 @@ footer a {
     /*background-color: #f1f3f4;*/
 }
 
-.contenedor-mapa h3, .contenedor-mapa-grande h3 {
+.contenedor-mapa h3 {
     margin: 0;
     margin-top: 15px;
     color: #512b58;      
 }
 
-.contenedor-mapa p, .contenedor-mapa-grande p {
+.contenedor-mapa p {
     color: #512b58;
     text-align: justify;    
     margin: 0;
@@ -272,10 +277,109 @@ footer a {
 /* SECCION UBICANOS */
 
 .contenedor-mapa-grande {    
+    margin: 0;
     width: 90%;
     max-width: 800px; 
     max-height: 800px;        
     margin: auto;    
-    margin-top: -36px;
-    margin-bottom: 18px;
+    margin-top: -46px;
+    margin-bottom: 0;
+}
+
+.contenedor-mapa-grande h3 {
+    margin: 0;
+    margin-top: 15px;
+    color: #512b58;     
+    font-family: 'Rubik'; 
+    font-size: 25px; 
+}
+
+.contenedor-mapa-grande p {
+    color: #512b58;
+    text-align: justify;    
+    margin: 0;
+    margin-bottom: 8px;        
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 800px) {
+    nav {
+        position: absolute;
+        top: 6%;
+        left: 0;
+        width: 100%;
+        background: #2a7886;
+        /*display: none;*/
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0 20px;
+        margin-bottom: 5px;
+    }
+
+    nav ul li a {
+        color: #f1f3f4;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    #secciones {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 22px;
+        margin: auto;
+        margin-top: 140px !important;
+    }
+
+    .contenedor-secciones {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin: auto;
+        flex-wrap: wrap;
+        margin-top: -40px;
+    }
+
+    #uno, #dos, #tres {        
+        margin-top: 50px;
+    }
+
+    #secciones img {
+        padding: 0 !important;
+        margin-bottom: 15px;
+    }
+
+    #secciones h2 {        
+        margin-bottom: 10px;
+        letter-spacing: 13px;        
+    }
+
+    #secciones p {
+        width: 85%;
+    }
+
+    footer p {        
+        line-height: 20px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    footer .redes li {
+        display: inline-block;
+        padding: 0 5px;
+        align-content: space-around;
+    }
+
+    footer .redes li a {
+        text-align: center;
+    }
+
+    footer .redes ul {
+        margin: 0 0 0 0 !important;
+        text-align: center;
+    }
 }
