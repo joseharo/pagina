@@ -113,7 +113,7 @@ nav ul li a:hover {
     margin: auto;      
     background-size: contain;
     width: 150px;
-    height: 150px;
+    height: 150px; 
     resize: none; 
     padding: 20px; 
     border-radius: 100%;
@@ -443,4 +443,3 @@ footer a {
         display: none;
     }
 }
-
